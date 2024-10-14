@@ -1,0 +1,39 @@
+*{
+    align-items: center;
+}
+body {
+    background-image: url("../img/fondo.png");
+       }
+h2{
+    color: white;
+}
+.contenedor{
+    padding: 5px;
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-areas: "header header"
+                         "nav nav"
+                         "contenido ads"
+                         "footer footer";
+}
+.contenedor .header{
+    background-color: azure;
+    grid-area: header;
+}
+.contenedor .nav{
+    background-color:azure;
+    grid-area: nav;
+}
+.contenido .contenido{
+    background-color: beige;
+    grid-area: contenido;
+}
+.contenido .ads{
+    background-color: azure;
+    grid-area: ads;
+}
+.contenido .footer{
+    background-color: azure;
+    grid-area: footer;
+}
